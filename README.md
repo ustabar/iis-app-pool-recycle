@@ -12,19 +12,22 @@ a single computer name or leave off for localhost
 
 Use this switch to specifiy credentials other than the current logged in user.
 
-'''powershell
+```powershell
 Recycle-AppPool.ps1 -ServerName REMOTESERVER
-'''
+```
 
 Will run on a remote server with current logged in creds
 
+```powershell
 Recycle-AppPool.ps1 -ServerName REMOTESERVER -WithCredentials
+```
 
 Will run on a server remotely with different credentials specified during launch
 
-.EXAMPLE
+```powershell
 Recycle-AppPool.ps1
+```
+
 Will run on locally. Defaults to localhost with current logged in user
 
-.NOTES
 WithCredentials is a switch, it does not accept any credentials. A prompt will appear later.
